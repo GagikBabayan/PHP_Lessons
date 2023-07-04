@@ -2,7 +2,7 @@
     //check POST
     if(isset($_POST['name']) && isset($_POST['age'])){
         //connect server
-        $conn = new mysqli("localhost","root","my2001sql777gagik");
+        $conn = new mysqli("localhost","root","password");
 
         //create database
         $databaseName = "students";
@@ -17,7 +17,7 @@
         }
 
          //connect server
-        $conn = new mysqli("localhost","root","my2001sql777gagik","$databaseName");
+        $conn = new mysqli("localhost","root","password","$databaseName");
 
         //get data
         $name = $conn->real_escape_string($_POST['name']);
